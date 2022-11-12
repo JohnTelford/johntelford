@@ -1,0 +1,60 @@
+---
+id: deploy
+title: Team - Deploy
+---
+
+:::info
+Deploying a website is making it available on the Internet. The production version is deployed when stakeholders agree.
+
+Meanwhile, developers working on features, fixes, or testing may deploy a private [Preview ](deploy#preview) website with their changes, without disturbing other developers work or the production version. This enables the stakeholders to monitor progress. See [Preview Deployments](#preview-deployments)
+:::
+
+---
+
+## Prerequisites
+
+- Deploy
+  - Public website
+  - Private development websites
+  - Vendor
+  - Secured
+
+---
+
+## Deployment
+
+[Docusaurus](https://docusaurus.io/docs#features) supports static site hosting services such as [Cloudflare](https://www.cloudflare.com), [GitHub Pages](https://pages.hub.com/), [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/),  and others. I have used these and other hosting services. My choice is Cloudflare.
+
+---
+
+### Cloudflare
+
+This website is using [Cloudflare](https://www.cloudflare.com) for a [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), Domain Name System (DNS) and website deployment.
+Cloudflare builds websites and deploys them when [VScode](#vscode) pushes changes from the _Local Repository_ to the _Central Repository_, Cloudflare then automatically builds the website and deploys to the Internet.
+
+Benefits deploying projects with Cloudflare are:
+
+- Zero Trust Security
+- Performance
+- Stability
+
+Features this author like are:
+
+- Zero Trust Security  
+  [What is Zero Trust security?](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)
+
+- Automatic website deployment after a [push](developmenttools/#push) to the GitHub repository branch. Team members may periodically [Preview](#preview) local repository to a private and secure website where stockholders view their work and give feedback. 
+- Website builds are quick
+- Previous deployments can be quickly redeploy
+
+---
+
+## Preview 
+
+As team members makes changes to their repository clone, they may deploy their local cloned repository to a private [Preview](#preview) Internet website for stakeholders to quickly view and give feedback.
+
+The repository guardian and other team members evaluating pull requests may deploy them to a private Internet website for stakeholders to preview and give feedback.
+
+When the pull request team and stakeholders are satisfied the updated production changes are ready for deployment, the repository guardian deploys the updated production version of the website to a private [preview](#preview) Internet website for stakeholders to preview and give feedback. When the stakeholders are satisfied with the updated production version, the repository guardian deploys the updated production version of the website to the Internet
+
+
